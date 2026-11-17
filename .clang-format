@@ -1,0 +1,14 @@
+BasedOnStyle: LLVM
+Standard: Latest
+Language: Cpp
+ColumnLimit: 100
+IndentWidth: 4
+TabWidth: 4
+UseTab: ForIndentation
+PointerAlignment: Left
+ReferenceAlignment: Left
+AllowShortFunctionsOnASingleLine: Inline
+AlignConsecutiveAssignments: None
+AlignConsecutiveDeclarations: None
+SpaceBeforeParens: ControlStatements
+SortIncludes: CaseSensitive

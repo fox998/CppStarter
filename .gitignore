@@ -1,0 +1,91 @@
+# Prerequisites and dependencies
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build outputs and presets
+build/
+bin/
+lib/
+out/
+CMakeUserPresets.json
+
+# In-source CMake build artifacts
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+install_manifest.txt
+
+# Language Server & Tooling (Clangd / Clang-Tidy)
+compile_commands.json
+.cache/
+.clangd/
+
+# Profiling, sanitizer, and coverage outputs
+gmon.out
+perf.data*
+*.gcda
+*.gcno
+*.gcov
+asan.log.*
+ubsan.log.*
+
+# Core dumps
+core
+core.*
+vgcore.*
+
+# IDE and Editor artifacts
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.cproject
+.settings/
+
+# VS Code: keep shared workspace configuration, ignore user state
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Operating System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+
+# Backup and swap files
+*~
+*.swp
+*.swo

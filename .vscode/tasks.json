@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build",
+            "command": "[ -d build/${input:preset} ] || cmake --preset ${input:preset}; cmake --build --preset ${input:preset}",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": {
+                "owner": "cpp",
+                "fileLocation": [
+                    "autoDetect",
+                    "${workspaceFolder}"
+                ],
+                "pattern": {
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error|fatal error):\\s+(.*)$",
+                    "file": 1,
+                    "line": 2,
+                    "column": 3,
+                    "severity": 4,
+                    "message": 5
+                }
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "preset",
+            "type": "pickString",
+            "description": "Select CMake Preset",
+            "options": [
+                "debug",
+                "release",
+                "asan"
+            ],
+            "default": "debug"
+        }
+    ]
+}

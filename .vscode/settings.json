@@ -1,0 +1,15 @@
+{
+    "[cpp]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.formatOnSave": true
+    },
+    "C_Cpp.intelliSenseEngine": "disabled",
+    "clangd.arguments": [
+        "--background-index",
+        "--clang-tidy",
+        "--header-insertion=iwyu",
+        "--completion-style=detailed",
+        "--query-driver=/usr/bin/g++",
+        "-j=4"
+    ]
+}
